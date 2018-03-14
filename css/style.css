@@ -1,0 +1,398 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 17px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  background-color: #f4f7f9;
+}
+
+.main-logo {
+  font-size: 24px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.main-logo:hover {
+  background-color: #ca2c37;
+}
+
+.main-logo:active {
+  background-color: #ba2732;
+}
+
+.row-selected-products {
+  background-color: #293449;
+}
+
+.row-selected-products a {
+  color: #ffffff;
+  line-height: 18px;
+}
+
+.main-bookmarks a:hover,
+.main-basket a:hover {
+background-color: #212a3a;
+}
+
+.main-bookmarks a:active,
+.main-basket a:active {
+background-color: #161d29;
+color: rgba(255, 255, 255, 0.6);
+}
+
+.main-checkout {
+  background-color: #63a63e;
+}
+
+.main-checkout:hover {
+  background-color: #5fbb2d;
+}
+
+.main-checkout:active {
+  background-color: #518534;
+  color: rgba(255, 255, 255, 0.51);
+}
+
+.main-description {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+.main-address {
+  list-style: none;
+}
+
+.main-address-number {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+  border: 3px solid #ffffff;
+}
+
+.main-address-city {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.user-navigation {
+  font-size: 21px;
+  line-height: 21px;
+  list-style: none;
+}
+
+.user-navigation a {
+  color: inherit;
+  background: #ffffff;
+}
+
+.user-navigation a:hover {
+  color: #ee3643;
+}
+
+.user-navigation a:active {
+  color: rgba(0, 0, 0, 0.302);
+}
+
+.site-navigation {
+  list-style: none;
+  background-color: #32425c;
+}
+
+.site-navigation a {
+  color: #ffffff;
+}
+
+.site-navigation a:hover {
+  background-color: #293449;
+}
+
+.site-navigation a:active {
+    color: rgba(255, 255, 255, 0.502);
+    background-color: #1d2739;
+}
+
+.services-list h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.services-list a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: rgba(229, 229, 229, 0.5);
+}
+
+.services-list a:hover {
+  background-color: rgba(204, 204, 204, 0.6);
+}
+
+.services-list a:active {
+  background-color: rgba(178, 178, 178, 0.7);
+}
+
+.materials-block,
+.delivery-block {
+  background-color: #ffbf47;
+}
+
+.tool-block {
+  background-color: #3bbce3;
+}
+
+.technics-block {
+  background-color: #dc91d8;
+}
+
+.discounts-block {
+  background-color: #8ed78f;
+}
+
+.caption {
+  background-color: #f9f5f0;
+}
+
+.caption-txt {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.caption-btn {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.product-item,
+.manufacture-item {
+  font-family: "PT Sans", Arial, sans-serif;
+  list-style: none;
+}
+
+.product-list,
+.manufacture-list {
+  border: 1px solid #eaeaea;
+  text-align: center;
+}
+
+.product-list h3 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.product-list span {
+  line-height: 18px;
+  color: #a9a9a9;
+  text-decoration: line-through;
+}
+
+.product-list p {
+  background-color: #ee3643;
+  color: #ffffff;
+}
+
+.offers {
+  background-color: #f4f7f9;
+}
+
+.offers-caption-txt,
+.company-caption-txt,
+.contacts-caption-txt {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.offers-item {
+  list-style: none;
+}
+
+.offers-list,
+.offers-description p,
+.company p,
+.contacts p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.offers-nav {
+  list-style: none;
+}
+
+.offers-nav-btn {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: #32425c;
+}
+
+.offers-nav-btn:hover {
+  background-color: #293449;
+}
+
+.offers-description h2 {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 36px;
+  color: #32425c;
+}
+
+.delivery {
+  background-image: url(/Users/yanbronovitskiy/Documents/GitHub/608889-technomart/img/auto.jpg);
+  background-repeat: no-repeat;
+}
+
+.guaranty {
+  background-image: url(/Users/yanbronovitskiy/Documents/GitHub/608889-technomart/img/medal.png);
+  background-repeat: no-repeat;
+}
+
+.credit {
+  background-image: url(/Users/yanbronovitskiy/Documents/GitHub/608889-technomart/img/credit.jpg);
+  background-repeat: no-repeat;
+}
+
+.company-dignity {
+  list-style: none;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.company-btn {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+  text-transform: uppercase;
+
+}
+
+.contacts-btn {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+  text-transform: uppercase;
+}
+
+.main-footer {
+  background-color: #32425c;
+}
+
+.footer-logo {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: #ee3643;
+  text-transform: uppercase;
+}
+
+.footer-site-navigation {
+  list-style: none;
+}
+
+.footer-site-navigation a,
+.footer-contacts {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+}
+
+.another-color a {
+  color: #ffd180;
+}
+
+.footer-site-navigation a:hover {
+  text-decoration: underline;
+}
+
+.footer-site-navigation a:active {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.footer-row {
+  background-color: #293449;
+  color: #ffffff;
+}
+
+.footer-row p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.footer-row a {
+  color: #ffd180;
+}
+
+.footer-social a {
+  background-color: #212a3a;
+}
+
+.footer-social a:hover,
+.footer-social a:active {
+  background-color: #ee3643;
+}
+
+.footer-develope-link:hover {
+  text-decoration: underline;
+}
+
+.footer-develope-link:active {
+  text-decoration: none;
+  color: #ee3643;
+}
+
+.modal-write-us input,
+.modal-write-us textarea {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #a9a9a9;
+  border: 2px solid #dee3e4;
+  border-radius: 3px;
+}
+
+.modal-write-us label {
+  font-size: 18px;
+  line-height: 18px;
+  color: inherit;
+}
+
+.modal-send {
+  background-color: #f4f4f4;
+}
+
+.modal-send-btn {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+}
