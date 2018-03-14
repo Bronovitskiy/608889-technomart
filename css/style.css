@@ -24,7 +24,8 @@ a {
   background-color: #ee3643;
 }
 
-.main-logo:hover {
+.main-logo:hover,
+.main-logo:focus {
   background-color: #ca2c37;
 }
 
@@ -42,7 +43,9 @@ a {
 }
 
 .main-bookmarks a:hover,
-.main-basket a:hover {
+.main-basket a:hover,
+.main-bookmarks a:focus,
+.main-basket a:focus {
 background-color: #212a3a;
 }
 
@@ -56,7 +59,8 @@ color: rgba(255, 255, 255, 0.6);
   background-color: #63a63e;
 }
 
-.main-checkout:hover {
+.main-checkout:hover,
+.main-checkout:focus {
   background-color: #5fbb2d;
 }
 
@@ -100,7 +104,8 @@ color: rgba(255, 255, 255, 0.6);
   background: #ffffff;
 }
 
-.user-navigation a:hover {
+.user-navigation a:hover,
+.user-navigation a:focus {
   color: #ee3643;
 }
 
@@ -117,7 +122,8 @@ color: rgba(255, 255, 255, 0.6);
   color: #ffffff;
 }
 
-.site-navigation a:hover {
+.site-navigation a:hover,
+.site-navigation a:focus {
   background-color: #293449;
 }
 
@@ -140,7 +146,8 @@ color: rgba(255, 255, 255, 0.6);
   background-color: rgba(229, 229, 229, 0.5);
 }
 
-.services-list a:hover {
+.services-list a:hover,
+.services-list a:focus {
   background-color: rgba(204, 204, 204, 0.6);
 }
 
@@ -251,7 +258,8 @@ color: rgba(255, 255, 255, 0.6);
   background-color: #32425c;
 }
 
-.offers-nav-btn:hover {
+.offers-nav-btn:hover,
+.offers-nav-btn:focus {
   background-color: #293449;
 }
 
@@ -328,7 +336,8 @@ color: rgba(255, 255, 255, 0.6);
   color: #ffd180;
 }
 
-.footer-site-navigation a:hover {
+.footer-site-navigation a:hover,
+.footer-site-navigation a:focus {
   text-decoration: underline;
 }
 
@@ -357,11 +366,13 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-social a:hover,
-.footer-social a:active {
+.footer-social a:active,
+.footer-social a:focus {
   background-color: #ee3643;
 }
 
-.footer-develope-link:hover {
+.footer-develope-link:hover,
+.footer-develope-link:focus {
   text-decoration: underline;
 }
 
