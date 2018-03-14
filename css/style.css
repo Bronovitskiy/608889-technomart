@@ -55,6 +55,13 @@ background-color: #161d29;
 color: rgba(255, 255, 255, 0.6);
 }
 
+.with-products a,
+.with-products a:hover,
+.with-products a:focus,
+.with-products a:active {
+  background-color: #ee3643;
+}
+
 .main-checkout {
   background-color: #63a63e;
 }
@@ -113,6 +120,28 @@ color: rgba(255, 255, 255, 0.6);
   color: rgba(0, 0, 0, 0.302);
 }
 
+.user-navigation-cabinet {
+  list-style: none;
+}
+
+.user-link {
+  background-color: #ffffff;
+}
+
+.user-link a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.orders-link a,
+.personal-link a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
 .site-navigation {
   list-style: none;
   background-color: #32425c;
@@ -131,6 +160,84 @@ color: rgba(255, 255, 255, 0.6);
     color: rgba(255, 255, 255, 0.502);
     background-color: #1d2739;
 }
+
+.breadcrumbs,
+.filter p,
+.catalog-navigation {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.breadcrumbs a {
+  color: #000000;
+}
+
+.filter p,
+.catalog-navigation {
+  background-color: #f7f3ec;
+}
+
+.filter legend {
+  font-family: "PT Sans", Arial, sans-serif;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter label,
+.filter-button {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter-button {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+}
+
+.catalog-nav-item {
+  list-style: none;
+}
+
+.catalog-nav-list a {
+  color: rgba(0, 0, 0, 0.302);
+  background-image: url(/Users/yanbronovitskiy/Documents/GitHub/608889-technomart/img/under-line.png);
+  background-position: bottom;
+  background-repeat: repeat-x;
+}
+
+.catalog-nav-list a:hover,
+.catalog-nav-list a:focus {
+  color: inherit;
+  border-bottom: 1px solid #ee3643;
+  background: none;
+}
+
+.catalog-list-current a {
+  background-image: none;
+  border-bottom: none;
+  color: #ee3643;
+}
+.catalog-list-current a:hover,
+.catalog-list-current a:focus,
+.catalog-list-current a:active {
+  background-image: none;
+  border-bottom: none;
+  color: #ee3643;
+}
+
 
 .services-list h3 {
   font-size: 24px;
@@ -176,6 +283,10 @@ color: rgba(255, 255, 255, 0.6);
   background-color: #f9f5f0;
 }
 
+.inner-caption {
+  background-color: #f2f6f8;
+}
+
 .caption-txt {
   font-size: 30px;
   font-weight: normal;
@@ -218,6 +329,35 @@ color: rgba(255, 255, 255, 0.6);
 .product-list p {
   background-color: #ee3643;
   color: #ffffff;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+}
+
+.pagination-item a:active {
+  border: 1px solid #ee3643;
+
+}
+
+.pagination-item-current a {
+  color: #ffffff;
+  background-color: #ee3643;
+  border: 1px solid #ee3643;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: #ffffff;
+  background-color: #ee3643;
+  border: 1px solid #ee3643;
 }
 
 .offers {
@@ -308,6 +448,22 @@ color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
 }
 
+.product-description {
+  background-color: #f2f6f8;
+}
+
+.product-description h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.product-description p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
 .main-footer {
   background-color: #32425c;
 }
@@ -381,12 +537,16 @@ color: rgba(255, 255, 255, 0.6);
   color: #ee3643;
 }
 
-.modal-write-us input,
-.modal-write-us textarea {
+.modal-write-us input::-webkit-input-placeholder,
+.modal-write-us textarea::-webkit-input-placeholder {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
+}
+
+.modal-write-us input,
+.modal-write-us textarea {
   border: 2px solid #dee3e4;
   border-radius: 3px;
 }
