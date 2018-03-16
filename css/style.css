@@ -7,6 +7,7 @@ body {
   line-height: 17px;
   color: #000000;
   background-color: #ffffff;
+  min-width: 1200px;
 }
 
 a {
@@ -15,6 +16,11 @@ a {
 
 .main-navigation {
   background-color: #f4f7f9;
+  margin: 0px;
+  padding: 0px;
+  min-height: 320px;
+
+
 }
 
 .main-logo {
@@ -22,6 +28,10 @@ a {
   line-height: 24px;
   color: #ffffff;
   background-color: #ee3643;
+  width: 220px;
+  text-align: center;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 
 .main-logo:hover,
@@ -33,13 +43,42 @@ a {
   background-color: #ba2732;
 }
 
-.row-selected-products {
+.wrapper {
   background-color: #293449;
+  width: 100%;
+}
+
+.row-selected-products {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 940px;
+}
+
+.wrapper .row-selected-products {
+  display: flex;
+  flex-direction:row;
+  align-items:center;
+  margin-bottom: 46px;
 }
 
 .row-selected-products a {
   color: #ffffff;
   line-height: 18px;
+
+}
+
+.main-bookmarks {
+  width: 150px;
+  margin-left: auto;
+  text-align: center;
+  /* border: 1px solid white; /* -- ПОТОМ УБРАТЬ -- */
+
+}
+
+.main-basket {
+  width: 150px;
+  text-align: center;
+  /* border: 1px solid white; /* -- ПОТОМ УБРАТЬ -- */
 }
 
 .main-bookmarks a:hover,
@@ -64,6 +103,9 @@ color: rgba(255, 255, 255, 0.6);
 
 .main-checkout {
   background-color: #63a63e;
+  width: 150px;
+  text-align: center;
+  /* border: 1px solid white; /* -- ПОТОМ УБРАТЬ -- */
 }
 
 .main-checkout:hover,
@@ -76,15 +118,35 @@ color: rgba(255, 255, 255, 0.6);
   color: rgba(255, 255, 255, 0.51);
 }
 
+.middle-corrector {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 940px;
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid green; /* -- ПОТОМ УБРАТЬ -- */
+  margin-bottom:44px;
+}
+
 .main-description {
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  margin-left: 53px;
+  /* border: 1px solid red; /* -- ПОТОМ УБРАТЬ -- */
 }
 
 .main-address {
   list-style: none;
+  width: 300px;
+  margin:0;
+  padding: 0;
+  margin-left:70px;
+  /* border: 1px solid red; /* -- ПОТОМ УБРАТЬ -- */
 }
 
 .main-address-number {
@@ -92,19 +154,32 @@ color: rgba(255, 255, 255, 0.6);
   line-height: 21px;
   color: #ee3643;
   border: 3px solid #ffffff;
+  width: 270px;
+  text-align: center;
 }
 
 .main-address-city {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
+  width: 270px;
+  text-align: center;
 }
 
 .user-navigation {
   font-size: 21px;
   line-height: 21px;
   list-style: none;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; /* -- ПОТОМ УБРАТЬ -- */
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+justify-content: space-between;
 }
+
 
 .user-navigation a {
   color: inherit;
@@ -142,9 +217,23 @@ color: rgba(255, 255, 255, 0.6);
   text-decoration: underline;
 }
 
-.site-navigation {
+.navigation-corrector {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 940px;
+  /* border: 1px solid green; /* -- ПОТОМ УБРАТЬ -- */
+}
+
+.navigation-corrector .site-navigation {
   list-style: none;
   background-color: #32425c;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
 }
 
 .site-navigation a {
