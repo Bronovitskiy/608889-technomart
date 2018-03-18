@@ -487,12 +487,16 @@ color: rgba(255, 255, 255, 0.6);
   width: 940px;
   margin-bottom: 53px;
   margin-top: 59px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   /* border: 1px solid green;  */  /* ------   потом убрать ----------- */
 }
 
 .services-item-horizontal {
   display: flex;
   justify-content:space-between;
+  width: 100%;
 /*   border: 1px solid black;     */  /* ------   потом убрать ----------- */
 }
 
@@ -733,7 +737,12 @@ justify-content: flex-start;
 
 .offers {
   background-color: #f4f7f9;
-  width: 100%;
+  width: 940px;
+  display: flex;
+  flex-wrap: wrap;
+  padding:0 calc((100% - 930px) / 2);
+  justify-content: center;
+  margin-bottom: 80px;
   /* border: 1px solid red; */ /* ------- ПОТОМ УБРАТЬ   ------*/ */
 }
 
@@ -748,15 +757,15 @@ justify-content: flex-start;
   padding-top: 63px;
 }
 
-.offers-wrapper {
+/* .offers-wrapper {
   margin: 0 auto;
   padding: 0 10px;
   width: 940px;
   display: flex;
-  flex-direction: column;
-  /* border: 1px solid red; */  /* ------- ПОТОМ УБРАТЬ   ------*/
+
   margin-bottom: 83px;
-}
+} */
+/* border: 1px solid red; */  /* ------- ПОТОМ УБРАТЬ   ------*/
 
 .product-wrapper .offers-caption-txt {
  /*border: 1px solid black; */  /* ------- ПОТОМ УБРАТЬ   ------*/
@@ -780,11 +789,20 @@ margin-bottom: 37px;
   text-transform: uppercase;
 }
 
+.offers-caption-txt {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  /* border: 1px solid black; */
+  margin-bottom: 30px;
+  padding-top: 68px;
+
+}
+
 .offers-item {
   list-style: none;
   /* border: 1px solid black; */
   width: 400px;
-  padding-top: 30px; */
 }
 
 .offers-item,
@@ -794,28 +812,28 @@ margin-bottom: 37px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
-
-
-}
-
-.offers-nav-wrapper {
-  display: flex;
-  margin: 0 auto;
-  padding: 0 10px;
-  width: 940px;
-  /* border: 1px solid red; */  /* ------- ПОТОМ УБРАТЬ   ------*/
-  margin-bottom: 82px;
 }
 
 .offers-description {
   width: 620px;
   /* border: 1px solid green; */ /* ------- ПОТОМ УБРАТЬ   ------*/
-  min-height: 261px;
+  min-height: 283px;
   margin-left: auto;
 }
 
 .delivery-item {
   width: 275px;
+}
+
+.guaranty-item {
+  width: 380px;
+}
+
+.caption-wrapper {
+  margin: 0 auto;
+  /* padding: 0 10px; */
+  width: 940px;
+  margin-bottom: 83px;
 }
 
 .offers-nav {
@@ -825,6 +843,8 @@ margin-bottom: 37px;
   /* border: 1px solid green; */ /* ------- ПОТОМ УБРАТЬ   ------*/
   margin: 0;
   padding: 0;
+  margin-top: 2px;
+
 }
 
 .offers-nav-btn {
@@ -848,23 +868,31 @@ margin-bottom: 37px;
   color: #32425c;
   margin: 0;
   padding: 0;
+}
 
+.offers-description-btn {
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #ff5357;
+  color: #ffffff;
 }
 
 .delivery {
-  background-image: url(/Users/yanbronovitskiy/Documents/GitHub/608889-technomart/img/auto.jpg);
+  background-image: url(../img/auto.jpg);
   background-repeat: no-repeat;
   background-position: right;
 }
 
 .guaranty {
-  background-image: url(/Users/yanbronovitskiy/Documents/GitHub/608889-technomart/img/medal.png);
+  background-image: url(../img/medal.png);
   background-repeat: no-repeat;
+  background-position: right;
 }
 
 .credit {
-  background-image: url(/Users/yanbronovitskiy/Documents/GitHub/608889-technomart/img/credit.jpg);
+  background-image: url(../img/credit.jpg);
   background-repeat: no-repeat;
+  background-position: right;
 }
 
 .container-wrapper {
