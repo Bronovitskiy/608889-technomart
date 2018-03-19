@@ -880,7 +880,7 @@ margin-bottom: 37px;
 .delivery {
   background-image: url(../img/auto.jpg);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: 100% 110%;
 }
 
 .guaranty {
