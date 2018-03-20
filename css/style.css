@@ -32,21 +32,29 @@ a {
 .main-logo {
   font-size: 24px;
   line-height: 24px;
+  font-weight:400;
   color: #ffffff;
   background-color: #ee3643;
   width: 220px;
   text-align: center;
   padding-top: 13px;
-  padding-bottom: 13px;
+  padding-bottom: 6px;
+  border-bottom: 5px solid #b52933;
+  display:inline-block;
+  position: absolute;
+  top: 0;
+  display: none;      /* Потом убрать */
 }
 
 .main-logo:hover,
 .main-logo:focus {
-  background-color: #ca2c37;
+background-color:#ca2c37;
+border-bottom: 5px solid #9a212a;
 }
 
 .main-logo:active {
   background-color: #ba2732;
+  border-bottom: 5px solid #8e1e26;
 }
 
 .wrapper {
@@ -58,6 +66,7 @@ a {
   margin: 0 auto;
   padding: 0 10px;
   width: 940px;
+  height: 42px;
 }
 
 .wrapper .row-selected-products {
@@ -67,10 +76,32 @@ a {
   margin-bottom: 46px;
 }
 
-.row-selected-products a {
+.row-selected-products a:not(.main-logo ) {
   color: #ffffff;
   line-height: 18px;
 
+}
+
+.main-search {
+  margin-left: auto;
+  width: 270px;
+}
+
+.main-search input[type="search"] {
+  border: none;
+  padding-left:48px;
+  width: 270px;
+  height: 42px;
+  border: 1px solid white;
+  margin-left: 20px;
+  background-color: #293449;
+
+}
+
+.main-search input[type="search"]::before {
+  content: "";
+  position: absolute;
+  background-image:url(../img/icon-search.svg);
 }
 
 .main-bookmarks {
