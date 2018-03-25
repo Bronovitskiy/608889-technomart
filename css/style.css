@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 17px;
   font-weight: normal;
   line-height: 17px;
@@ -42,9 +42,7 @@ a {
   display: block;
   /* border-bottom: 5px solid #b52933; */
   box-shadow: 0 5px 0 0 #b52933;
-  /* position: absolute; */
-  /* top: 0; */
-  /* display: none;      /* ÐŸÐ¾Ñ‚Ð¾Ð¼ ÑƒÐ±Ñ€Ð°Ñ‚ÑŒ */ */
+
 }
 
 .main-logo:hover,
@@ -302,7 +300,6 @@ opacity: 0.5;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* border: 1px solid green; /* -- ÐŸÐžÐ¢ÐžÐœ Ð£Ð‘Ð ÐÐ¢Ð¬ -- */
   margin-bottom: 21px;
 }
 
@@ -316,7 +313,6 @@ opacity: 0.5;
   margin: 0;
   padding: 0;
   margin-left: 52px;
-  /* border: 1px solid red; /* -- ÐŸÐžÐ¢ÐžÐœ Ð£Ð‘Ð ÐÐ¢Ð¬ -- */
   padding-top:  2px;
 }
 
@@ -326,7 +322,6 @@ opacity: 0.5;
   margin:0;
   padding: 0;
   margin-left: 70px;
-  /* border: 1px solid red; /* -- ÐŸÐžÐ¢ÐžÐœ Ð£Ð‘Ð ÐÐ¢Ð¬ -- */
 }
 
 .main-address-number {
@@ -490,12 +485,12 @@ opacity: 0.5;
 }
 
 .orders-link {
-  margin-left: 18px;   /* -- ÐŸÐžÐ¢ÐžÐœ Ð˜Ð¡ÐŸÐ ÐÐ’Ð˜Ð¢Ð¬ -- */
+  margin-left: 18px;
   margin-top: 6px;
 }
 
 .personal-link {
-  margin-left: 32px;  /* -- ÐŸÐžÐ¢ÐžÐœ Ð˜Ð¡ÐŸÐ ÐÐ’Ð˜Ð¢Ð¬  -- */
+  margin-left: 32px;
   position: relative;
   margin-top: 6px;
 }
@@ -561,7 +556,6 @@ opacity: 0.5;
   border-bottom: 5px solid #293449;
   text-align: center;
   /* width: 100%; */
-  display:  b;
 }
 .site-navigation li:first-child a{
   padding-left: 22px;
@@ -598,7 +592,7 @@ opacity: 0.5;
 .breadcrumbs,
 .filter p,
 .catalog-navigation {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   list-style: none;
@@ -676,12 +670,11 @@ opacity: 0.5;
 }
 
 .filter legend {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 13px;
-  padding-top: -5px;
 }
 
 .filter fieldset {
@@ -691,7 +684,7 @@ opacity: 0.5;
 }
 
 .filter label {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform:  uppercase;
   font-size: 15px;
   line-height: 20px;
@@ -705,7 +698,7 @@ opacity: 0.5;
   background-color: #ffffff;
   border: 1px solid #eaeaea;
   border-radius: 2px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform:  uppercase;
   font-size: 13px;
   line-height: 18px;
@@ -791,7 +784,7 @@ opacity: 0.5;
 }
 
 .range-amount input::-webkit-input-placeholder {
-  font-family: "PT Sans", "Arial" sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   color: #000000;
@@ -897,6 +890,10 @@ opacity: 0.5;
   background-color: #e5e5e5;
   position: absolute;
   bottom: -23px;
+}
+
+.catalog {
+  width: 100%;
 }
 
 .catalog-navigation {
@@ -1051,27 +1048,24 @@ opacity: 0.5;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* border: 1px solid green;  */  /* ------   Ð¿Ð¾Ñ‚Ð¾Ð¼ ÑƒÐ±Ñ€Ð°Ñ‚ÑŒ ----------- */
 }
 
 .services-item-horizontal {
   display: flex;
   justify-content:space-between;
   width: 100%;
-/*   border: 1px solid black;     */  /* ------   Ð¿Ð¾Ñ‚Ð¾Ð¼ ÑƒÐ±Ñ€Ð°Ñ‚ÑŒ ----------- */
 }
 
 .services-item-vertical {
   display: flex;
   flex-direction: column;
-/*   border: 1px solid black; */ /* ------   Ð¿Ð¾Ñ‚Ð¾Ð¼ ÑƒÐ±Ñ€Ð°Ñ‚ÑŒ ----------- */
   width: 300px;
   margin-left: auto;
 }
 
 .services-item-slide {
   width: 620px;
-  height: 266px;   /* ------   Ð¿Ð¾Ñ‚Ð¾Ð¼ ÑƒÐ±Ñ€Ð°Ñ‚ÑŒ ----------- */
+  height: 266px;
   border: 1px solid red;
 
 }
@@ -1080,14 +1074,12 @@ opacity: 0.5;
   display: flex;
   margin: 0;
   padding: 0;
-  /* ------   Ð¿Ð¾Ñ‚Ð¾Ð¼ ÑƒÐ±Ñ€Ð°Ñ‚ÑŒ ----------- */
 }
 
 .services-list {
   width: 300px;
   margin-bottom: 20px;
   min-height: 123px;
-   /* ------   Ð¿Ð¾Ñ‚Ð¾Ð¼ ÑƒÐ±Ñ€Ð°Ñ‚ÑŒ ----------- */
 }
 
 .delivery-block {
@@ -1258,7 +1250,7 @@ opacity: 0.5;
   text-transform: uppercase;
   color: #32425c;
   width: 610px;
-  padding-left: 28px;
+  padding-left: 27px;
   align-self: center;
   padding-top: 30px;
   padding-bottom: 29px;
@@ -1301,13 +1293,17 @@ opacity: 0.5;
   width: 940px;
 }
 
+.catalog .product-item {
+  margin-bottom: 32px;
+}
+
 .product-item {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-bottom: 32px;
+
 }
 
 .product-list,
@@ -1327,7 +1323,7 @@ opacity: 0.5;
 
 .product-item,
 .manufacture-item {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   list-style: none;
 }
 
@@ -1434,7 +1430,7 @@ opacity: 0.5;
   color: white;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Cuprum", Arial sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
@@ -1616,7 +1612,6 @@ opacity: 0.5;
   flex-wrap: wrap;
   padding: 0 calc((100% - 940px) / 2);
   justify-content: center;
-  /* border: 1px solid red; */ /* ------- ÐŸÐžÐ¢ÐžÐœ Ð£Ð‘Ð ÐÐ¢Ð¬   ------*/ */
 }
 
 .offers-wrapper h2,
@@ -1631,7 +1626,6 @@ opacity: 0.5;
 }
 
 .product-wrapper .offers-caption-txt {
- /*border: 1px solid black; */  /* ------- ÐŸÐžÐ¢ÐžÐœ Ð£Ð‘Ð ÐÐ¢Ð¬   ------*/
  width: 400px;
  padding-top: 65px;
  margin-bottom: 25px;
@@ -1670,14 +1664,13 @@ opacity: 0.5;
 .offers-description p,
 .company p,
 .contacts p {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
 
 .offers-description {
   width: 620px;
-  /* border: 1px solid green; */ /* ------- ÐŸÐžÐ¢ÐžÐœ Ð£Ð‘Ð ÐÐ¢Ð¬   ------*/
   min-height: 283px;
   margin-left: auto;
 }
@@ -1703,9 +1696,8 @@ opacity: 0.5;
 .offers-nav {
   list-style: none;
   position: relative;
-  width: 240px;   /* -------  Ð”Ð£Ð‘Ð›Ð˜Ð Ð£Ð•Ð¢Ð¡Ð¯ Ð¡  .offers-nav-btn ------*/
-  min-height: 182px;      /* ------- ÐŸÐžÐ¢ÐžÐœ Ð£Ð‘Ð ÐÐ¢Ð¬   ------*/
-  /* border: 1px solid green; */ /* ------- ÐŸÐžÐ¢ÐžÐœ Ð£Ð‘Ð ÐÐ¢Ð¬   ------*/
+  width: 240px;
+  min-height: 182px;
   margin: 0;
   padding: 0;
   /* margin-top: 0px; */
@@ -1936,7 +1928,7 @@ opacity: 0.5;
 }
 
 .product-description p {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -1957,15 +1949,10 @@ opacity: 0.5;
   }
 
 .footer-contacts-wrapper {
-  /* border: 1px solid white; */   /* ------- ÐŸÐžÐ¢ÐžÐœ Ð£Ð‘Ð�ÐÐ¢Ð¬   ------*/
+
   width: 330px;
   display: flex;
   flex-direction: column;
-}
-
-.footer-site-wrapper {
-    /* border: 1px solid white; */   /* ------- ÐŸÐžÐ¢ÐžÐœ Ð£Ð‘Ð ÐÐ¢Ð¬   ------*/
-
 }
 
 .footer-logo {
@@ -1993,7 +1980,6 @@ opacity: 0.5;
   margin: 0;
   padding: 0;
   min-width: 610px;
-  /* border: 1px solid red; */   /* ------- ÐŸÐžÐ¢ÐžÐœ Ð£Ð‘Ð ÐÐ¢Ð¬   ------*/ */
   margin-left: auto;
 
 }
@@ -2013,7 +1999,6 @@ opacity: 0.5;
 }
 
 .footer-contacts {
-  /* border: 1px solid white; */   /* ------- ÐŸÐžÐ¢ÐžÐœ Ð£Ð‘Ð ÐÐ¢Ð¬   ------*/
   width: 330px;
   padding-left: 4px;
 }
@@ -2084,29 +2069,47 @@ opacity: 0.5;
   justify-content: center;
 }
 
-.vk-btn::before {
+.vk-btn {
+  background-image: url(../img/vk-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 7px 14px;
+}
+
+.fb-btn {
+  background-image: url(../img/fb-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 14px 11px;
+}
+
+.ins-btn {
+  background-image: url(../img/insta-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 9px 11px;
+}
+
+/* .vk-btn::before {
   content: "";
   background-image: url(../img/vk-icon.svg);
   position: absolute;
   width:26px;
   height: 15px;
-}
+} */
 
-.fb-btn::before {
+/* .fb-btn::before {
   content: "";
   background-image: url(../img/fb-icon.svg);
   position: absolute;
   width:12px;
   height: 22px;
-}
+} */
 
-.ins-btn::before {
+/* .ins-btn::before {
   content: "";
   background-image: url(../img/insta-icon.svg);
   position: absolute;
   width:21px;
   height: 21px;
-}
+} */
 
 .footer-social a:hover,
 .footer-social a:active,
@@ -2274,7 +2277,7 @@ opacity: 0.5;
 
 .modal-write-us input::-webkit-input-placeholder,
 .modal-write-us textarea::-webkit-input-placeholder {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
