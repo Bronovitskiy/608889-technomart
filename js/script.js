@@ -1,17 +1,14 @@
 var contactsLink = document.querySelector(".contacts-btn");
 var modalWriteUs = document.querySelector(".modal-write-us");
 var modalClose = document.querySelector(".modal-close");
+if(modalWriteUs!=null)
+{
 var yourName = modalWriteUs.querySelector(".your-name");
 var yourEmail = modalWriteUs.querySelector(".email");
 var yourTxtEmail = modalWriteUs.querySelector(".txt-email");
 var form = modalWriteUs.querySelector(".write-us");
-var storage = localStorage.getItem("yourName");
-var storage = localStorage.getItem("yourEmail");
-
-var buyModal = document.querySelector(".buy");
-var modalBasket = document.querySelector(".modal-basket");
-var basketClose = document.querySelector(".basket-close");
-
+// var storage = localStorage.getItem("yourName");
+// var storage = localStorage.getItem("yourEmail");
 var mapLink = document.querySelector(".js-map");
 var modalMap = document.querySelector(".modal-map");
 var mapClose = document.querySelector(".js-close");
@@ -71,14 +68,61 @@ window.addEventListener("keydown", function (evt) {
      }
   }
 });
-
-
-buyModal.addEventListener("click", function (evt) {
+}
+var buyModal = document.querySelectorAll(".buy");
+var modalBasket = document.querySelector(".modal-basket");
+var basketClose = document.querySelector(".basket-close");
+var continueShopping = document.querySelector(".continue-shopping");
+if(basketClose!=null)
+{
+  for(var i=0;i<buyModal.length;i++)
+  {
+buyModal[i].addEventListener("click", function (evt) {
   evt.preventDefault();
    modalBasket.classList.add("modal-show");
 console.log('работает');
 });
+}
 basketClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalBasket.classList.remove("modal-show");
 });
+continueShopping.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  modalBasket.classList.remove("modal-show");
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+    if (modalBasket.classList.contains("modal-show")) {
+      modalBasket.classList.remove("modal-show");
+       }
+    }
+  });
+});
+}
+
+var leftNav = document.querySelector(".left-nav");
+var rightNav = document.querySelector(".right-nav");
+
+var check=document.querySelector(".services-item-slide input[checked]");
+if (check!=null)
+{
+leftNav.addEventListener("click", function(){
+  check.style.border="1px solid red";
+  if (check.previousSibling.previousSibling.type=="radio")
+  {
+    check.checked=false;
+    check.previousSibling.previousSibling.click();
+    check=check.previousSibling.previousSibling;
+  }
+});
+rightNav.addEventListener("click", function(){
+if (check.nextSibling.nextSibling.type=="radio")
+{
+  check.checked=false;
+  check.nextSibling.nextSibling.click();
+  check=check.nextSibling.nextSibling;
+}
+});
+}

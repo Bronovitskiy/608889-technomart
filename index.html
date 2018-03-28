@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link rel="stylesheet" href="css/normalize.css" />
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body>
@@ -73,23 +73,21 @@
           <button class="left-nav"></button>
           <button class="right-nav"></button>
         </div>
-        <div class="slide slide-1">
-          <h2 class="slide-caption">Дрели</h2>
-          <p class="slide-description">Соседям на радость!</p>
-          <a href="catalog.html" class="slide-link">ОТКРЫТЬ КАТАЛОГ</a>
-        </div>
-        <div class="slide slide-2">
+        <input type="radio" class="slide-1" id="slide-1" name="toggle" checked data-check="true">
+        <input type="radio" class="slide-2" id="slide-2" name="toggle">
+        <div title="первый" class="slide slide-1">
           <h2 class="slide-caption">Перфораторы</h2>
           <p class="slide-description">Настоящие мужские игрушки</p>
           <a href="catalog.html" class="slide-link">ОТКРЫТЬ КАТАЛОГ</a>
         </div>
-        <div class="radio-nav">
-          <input type="radio" class="slide-1" id="slide-1" name="toggle" checked>
-          <input type="radio" class="slide-2" id="slide-2" name="toggle" checked>
-          <div class="radio-nav-controls">
-            <label for="slide-1"></label>
-            <label for="slide-2"></label>
-          </div>
+        <div title="второй" class="slide slide-2">
+          <h2 class="slide-caption">Дрели</h2>
+          <p class="slide-description">Соседям на радость!</p>
+          <a href="catalog.html" class="slide-link">ОТКРЫТЬ КАТАЛОГ</a>
+        </div>
+        <div class="radio-nav-controls">
+          <label for="slide-1"></label>
+          <label for="slide-2"></label>
         </div>
       </div>
       <div class="services-item-vertical">
@@ -178,7 +176,6 @@
       <input id="delivery-btn" name="btn" class="visually-hidden delivery-btn" type="radio" value="delivery" checked />
       <input id="guaranty-btn" name="btn" class="visually-hidden guaranty-btn" type="radio" value="guaranty" />
       <input id="credit-btn" name="btn" class="visually-hidden credit-btn" type="radio" value="credit" />
-
       <ul class="offers-nav">
         <li><label for="delivery-btn">
           <a class="offers-nav-btn delivery-active">Доставка</a></label></li>
@@ -187,7 +184,6 @@
         <li><label for="credit-btn">
             <a class="offers-nav-btn credit-active">Кредит</a></label></li>
       </ul>
-
       <div title="доставка" class="offers-description delivery">
         <h2>ДОСТАВКА</h2>
         <p class="delivery-item">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
@@ -244,11 +240,10 @@
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55
           </p>
         </div>
-        <!--<div class="footer-site-wrapper">-->
         <ul class="footer-site-navigation">
           <li><a href="#">Компания</a></li>
           <li><a href="#">Новости</a></li>
-          <li><a href="#">Каталог</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Контакты</a></li>
           <li class="another-color"><a href="#">Материалы</a></li>
@@ -256,7 +251,6 @@
           <li class="another-color"><a href="#">Инструмент</a></li>
           <li class="another-color"><a href="#">Спецпредложения</a></li>
         </ul>
-        <!--</div>-->
       </nav>
     </div>
     <section class="footer-row">
@@ -294,20 +288,23 @@
       <div class="modal-send">
         <button class="modal-send-btn" type="submit">Отправить</button>
       </div>
-
     </form>
-
   </section>
   <section class="modal modal-map">
-    <h2 class="visually-hidden">Как до нас добраться</h2>
-    <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CBa75Yq5WA" width="940" height="446" frameborder="0"></iframe> -->
+    <h2 class="visually-hidden">Как до нас добрaаться</h2>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.599104365163!2d30.320894616157123!3d59.938794181876176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1522153125428"
-      width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
-
+      width="940" height="446" style="border:0" allowfullscreen></iframe>
     <img class="visually-hidden" src="img/map-big.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" />
     <button class="modal-close js-close" type="button" aria-label="Закрыть">Закрыть</button>
   </section>
-  <script src="js/script.js"></script>
+  <section class="modal modal-basket">
+    <h2>Товар добавлен в корзину!</h2>
+    <div class="modal-nav">
+      <button class="checkout-btn" type="submit">ОФОРМИТЬ ЗАКАЗ</button>
+      <button class="continue-shopping" type="button">ПРОДОЛЖИТЬ ПОКУПКИ</button></div>
+    <button class="modal-close basket-close" type="button">Закрыть</button>
+  </section>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
